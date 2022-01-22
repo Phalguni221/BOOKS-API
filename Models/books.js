@@ -8,6 +8,6 @@ const bookSchema = new mongoose.Schema({
     imageURL: {type:String, default:'https://placekitten.com/200/300'}
 })
   
-  bookSchema.methods.showEstablished = function() {}
+  // bookSchema.methods.showEstablished = function() {}
     
   module.exports = mongoose.model('Book', bookSchema)
