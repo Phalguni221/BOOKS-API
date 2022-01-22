@@ -2,7 +2,7 @@ const router = require('express').Router()
 const db = require('../Models/books')
 
 // GET /books/seed route
-book.get('/books/seed', (req, res) => {[(
+router.get('/books/seed', (req, res) => {[(
     {
         title : "The Shinobi Initiative",
         description : "The reality-bending adventures of a clandestine service agency in the year 2166",
@@ -34,14 +34,14 @@ book.get('/books/seed', (req, res) => {[(
         quantity : 4,
         imageURL : "https://imgur.com/qYLKtPH.jpeg"
     }
-)]}
-)
       .then((books) => {
         res.json(books)
       })
    .catch(err => {
        console.log(err)
        res.render('error404')
+)]}
+)
    })
 
 //GET /books route
