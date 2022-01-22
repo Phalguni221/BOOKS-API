@@ -11,7 +11,5 @@ app.get('/', (req, res) => {
     // (your web browser most likely!)
     res.send('Dummy Text')
 })
-)
-})
 
 app.listen(3500)
